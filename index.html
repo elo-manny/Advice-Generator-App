@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" integrity="sha512-pVCM5+SN2+qwj36KonHToF2p1oIvoU3bsqxphdOIWMYmgr4ZqD3t5DjKvvetKhXGc/ZG5REYTT6ltKfExEei/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./JavaScript/index.js"></script>
+</head>
+
+<body>
+    <main class="advice-generator">
+        <h1 class="advice-generator__title">
+            ADVICE <span id="adviceId" class="advice-generator__number">#117</span>
+        </h1>
+
+        <p class="advice-generator__text">
+            <i class='bx bxs-quote-left'></i>
+            <span id="advice">
+                It's easy to sit up and take notice, what's difficult is getting up and taking action.
+            </span>
+            <i class='bx bxs-quote-right'></i>
+        </p>
+
+        <div class="advice-generator__divider">
+            <picture>
+                <source srcset="./images/pattern-divider-desktop.svg" media="(min-width: 768px)">
+                <img src="./images/pattern-divider-mobile.svg" alt="Divider">
+            </picture>
+        </div>
+
+        <button id="adviceBtn" class="advice-generator__button" aria-label="Generate new advice">
+            <img src="./images/icon-dice.svg" alt="Dice Icon">
+        </button>
+
+        <div id="loadingScreen" class="advice-generator__loading-screen hidden" aria-hidden="true">
+
+        </div>
+    </main>
+</body>
+
+</html>
